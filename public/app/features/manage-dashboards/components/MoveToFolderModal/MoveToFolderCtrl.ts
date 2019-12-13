@@ -14,8 +14,8 @@ export class MoveToFolderCtrl {
     this.folder = folder;
   }
 
-  save() {
-    return backendSrv.moveDashboards(this.dashboards, this.folder).then((result: any) => {
+  save = () => {
+    return this.backendSrv.moveDashboards(this.dashboards, this.folder).then((result: any) => {
       if (result.successCount > 0) {
         const header = `Dashboard${result.successCount === 1 ? '' : 's'} Moved`;
         const msg = `${result.successCount} dashboard${result.successCount === 1 ? '' : 's'} moved to ${
@@ -31,15 +31,15 @@ export class MoveToFolderCtrl {
       this.dismiss();
       return this.afterSave();
     });
-  }
+  };
 
-  onEnterFolderCreation() {
+  onEnterFolderCreation = () => {
     this.isValidFolderSelection = false;
-  }
+  };
 
-  onExitFolderCreation() {
+  onExitFolderCreation = () => {
     this.isValidFolderSelection = true;
-  }
+  };
 }
 
 export function moveToFolderModal() {
