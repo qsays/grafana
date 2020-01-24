@@ -15,7 +15,7 @@ export class MoveToFolderCtrl {
   }
 
   save = () => {
-    return this.backendSrv.moveDashboards(this.dashboards, this.folder).then((result: any) => {
+    return backendSrv.moveDashboards(this.dashboards, this.folder).then((result: any) => {
       if (result.successCount > 0) {
         const header = `Dashboard${result.successCount === 1 ? '' : 's'} Moved`;
         const msg = `${result.successCount} dashboard${result.successCount === 1 ? '' : 's'} moved to ${
