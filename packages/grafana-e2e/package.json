@@ -38,6 +38,6 @@
   },
   "types": "src/index.ts",
   "dependencies": {
-    "cypress": "3.7.0"
+    "cypress": "4.3.0"
   }
 }
