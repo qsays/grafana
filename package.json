@@ -177,7 +177,9 @@
     "packages:publish": "lerna publish from-package --contents dist",
     "packages:publishLatest": "lerna publish from-package --contents dist --yes",
     "packages:publishNext": "lerna publish from-package --contents dist --dist-tag next --yes",
-    "packages:publishCanary": "lerna publish from-package --contents dist --dist-tag canary --yes"
+    "packages:publishCanary": "lerna publish from-package --contents dist --dist-tag canary --yes",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -229,7 +231,7 @@
     "hoist-non-react-statics": "3.3.0",
     "immutable": "3.8.2",
     "is-hotkey": "0.1.4",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lodash": "4.17.15",
     "lru-cache": "^5.1.1",
     "marked": "0.6.2",
@@ -270,7 +272,8 @@
     "tti-polyfill": "0.2.2",
     "url-search-params-polyfill": "7.0.1",
     "whatwg-fetch": "3.0.0",
-    "xss": "1.0.3"
+    "xss": "1.0.3",
+    "snyk": "^1.316.1"
   },
   "resolutions": {
     "caniuse-db": "1.0.30000772"
@@ -289,5 +292,6 @@
   },
   "engines": {
     "node": ">=12 <13"
-  }
+  },
+  "snyk": true
 }
