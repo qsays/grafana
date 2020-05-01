@@ -21,7 +21,9 @@
     "bundle": "rollup -c rollup.config.ts",
     "build": "grafana-toolkit package:build --scope=e2e",
     "open": "cypress open",
-    "start": "cypress run"
+    "start": "cypress run",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "4.1.1",
@@ -38,6 +40,8 @@
   },
   "types": "src/index.ts",
   "dependencies": {
-    "cypress": "3.7.0"
-  }
+    "cypress": "3.7.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
