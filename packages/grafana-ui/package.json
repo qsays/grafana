@@ -35,7 +35,7 @@
     "@types/slate-react": "0.22.5",
     "bizcharts": "^3.5.5",
     "classnames": "2.2.6",
-    "d3": "5.15.0",
+    "d3": "7.0.0",
     "emotion": "10.0.27",
     "immutable": "3.8.2",
     "jquery": "3.4.1",
