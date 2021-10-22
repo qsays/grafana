@@ -270,7 +270,7 @@
     "tti-polyfill": "0.2.2",
     "url-search-params-polyfill": "7.0.1",
     "whatwg-fetch": "3.0.0",
-    "xss": "1.0.3"
+    "xss": "1.0.10"
   },
   "resolutions": {
     "caniuse-db": "1.0.30000772"
