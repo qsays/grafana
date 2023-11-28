@@ -25,7 +25,7 @@
     "build": "grafana-toolkit package:build --scope=ui"
   },
   "dependencies": {
-    "@grafana/data": "6.7.0-pre",
+    "@grafana/data": "8.2.3",
     "@grafana/slate-react": "0.22.9-grafana",
     "@torkelo/react-select": "2.1.1",
     "@types/react-color": "2.17.0",
@@ -33,7 +33,7 @@
     "@types/react-table": "7.0.2",
     "@types/slate": "0.47.1",
     "@types/slate-react": "0.22.5",
-    "bizcharts": "^3.5.5",
+    "bizcharts": "^4.0.0",
     "classnames": "2.2.6",
     "d3": "5.15.0",
     "emotion": "10.0.27",
